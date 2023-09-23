@@ -1,0 +1,79 @@
+/*
+background:url(`./images/<fileName>.<fileExtension>`)
+background-repeat
+background-size
+background-position
+background-attachment
+linear-gradient + shorthand
+colorZila
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+div {
+   min-height: 100vh;
+    /* height: 20rem; */
+    color: white;
+    border: 3px solid red;
+    /* text-align: center; */
+    font-size: 2rem;
+     
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.big_img {
+    
+    background: url("./big.jpeg");
+
+    /* linear gradient generated from colorzilla */
+/* background: linear-gradient(45deg, #e5e52d 0%, #e2662d 17%, #2989d8 50%, #2434e5 51%, #e52d61 70%, #7db9e8 100%), url("./big.jpeg"); */
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+        /* background-attachment: fixed; */
+}
+
+.small_img {
+
+    background: url("./images/folder-img.jpeg");
+    background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    
+}
+
+.folder_img {
+/* dark image overlay */
+
+/* descriptive way declaration */
+    /* background: linear-gradient(to top,rgba(0,0,0,0.9), rgba(255,100,239, 0.5)),
+    url("./big.jpeg");
+    background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; */
+
+
+        /*  shortcut */
+/* 
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(255, 100, 239, 0.5)),
+            url("./big.jpeg") center/cover  no-repeat fixed ;  */
+
+
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(255, 100, 239, 0.5)),
+                    url("./big.jpeg") center/cover fixed no-repeat ;
+}
